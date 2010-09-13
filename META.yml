@@ -1,0 +1,45 @@
+---
+abstract: 'Manipulate metadata in audio files'
+author:
+  - 'Egor Shipovalov <kogdaugodno@gmail.com>'
+build_requires:
+  File::Copy: 0
+  Test::Deep: 0
+  Test::More: 0
+configure_requires:
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3607'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Audio-Metadata
+provides:
+  Audio::Metadata:
+    file: lib/Audio/Metadata.pm
+    version: 0.01
+  Audio::Metadata::Flac:
+    file: lib/Audio/Metadata/Flac.pm
+    version: 0.01
+  Audio::Metadata::Flac::Block:
+    file: lib/Audio/Metadata/Flac/Block.pm
+  Audio::Metadata::Flac::Block::Application:
+    file: lib/Audio/Metadata/Flac/Block/Application.pm
+  Audio::Metadata::Flac::Block::Comments:
+    file: lib/Audio/Metadata/Flac/Block/Comments.pm
+  Audio::Metadata::Flac::Block::CueSheet:
+    file: lib/Audio/Metadata/Flac/Block/CueSheet.pm
+  Audio::Metadata::Flac::Block::Padding:
+    file: lib/Audio/Metadata/Flac/Block/Padding.pm
+  Audio::Metadata::Flac::Block::Picture:
+    file: lib/Audio/Metadata/Flac/Block/Picture.pm
+  Audio::Metadata::Flac::Block::SeekTable:
+    file: lib/Audio/Metadata/Flac/Block/SeekTable.pm
+  Audio::Metadata::Flac::Block::StreamInfo:
+    file: lib/Audio/Metadata/Flac/Block/StreamInfo.pm
+requires:
+  Any::Moose: 0
+  Path::Class: 0
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.01

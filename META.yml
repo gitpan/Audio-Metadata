@@ -17,7 +17,7 @@ name: Audio-Metadata
 provides:
   Audio::Metadata:
     file: lib/Audio/Metadata.pm
-    version: 0.01
+    version: 0.02
   Audio::Metadata::Flac:
     file: lib/Audio/Metadata/Flac.pm
     version: 0.01
@@ -42,4 +42,4 @@ requires:
   Path::Class: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.01
+version: 0.02

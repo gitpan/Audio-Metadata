@@ -13,6 +13,7 @@ lib/Audio/Metadata/Flac/Block.pm
 lib/Audio/Metadata/Flac.pm
 lib/Audio/Metadata.pm
 t/00-load.t
+t/10-crud.t
 t/manifest.t
 t/pod-coverage.t
 t/pod.t

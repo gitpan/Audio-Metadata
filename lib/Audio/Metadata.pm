@@ -12,7 +12,7 @@ has path => ( isa => 'Path::Class::File', is => 'ro', );
 
 __PACKAGE__->meta->make_immutable;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 
 sub BUILDARGS {

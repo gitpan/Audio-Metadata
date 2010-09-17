@@ -8,11 +8,9 @@ use File::Copy ();
 use Audio::Metadata;
 
 
-# Determine name of sample file.
-my $orig_test_file_var = 'TEST_AUDIO_FILE';
-my $orig_test_file_name = $ENV{$orig_test_file_var};
-die "Test audio file is non-existant or empty. Please specify it via \"$orig_test_file_var\" environment variable."
-    unless -s $orig_test_file_name;
+# Derive path to test FLAC file from the path to this test script.
+my $orig_test_file_name = $0;
+$orig_test_file_name =~ s/[^\/]+$/test-original.flac/;
 
 # Make a copy of sample file to avoid damaging it during testing.
 my $test_file_name = 'test.' . ($orig_test_file_name =~ /\.([^.]+)$/)[0];

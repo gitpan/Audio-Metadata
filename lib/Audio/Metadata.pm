@@ -12,7 +12,7 @@ has path => ( isa => 'Path::Class::File', is => 'ro', );
 
 __PACKAGE__->meta->make_immutable;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 
 sub BUILDARGS {
@@ -112,7 +112,7 @@ Audio::Metadata - Manipulate metadata in audio files
 
 =head1 VERSION
 
-Version 0.01
+Version 0.03
 
 =cut
 

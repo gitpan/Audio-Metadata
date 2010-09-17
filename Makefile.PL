@@ -9,7 +9,8 @@ WriteMakefile
                            'File::Copy' => 0,
                            'Path::Class' => 0,
                            'Test::Deep' => 0,
-                           'Test::More' => 0
+                           'Test::More' => 0,
+                           'autodie' => 1
                          },
           'INSTALLDIRS' => 'site',
           'EXE_FILES' => [],

@@ -14,6 +14,7 @@ my $builder = Module::Build->new(
         'File::Copy' => 0,
     },
     requires => {
+        'autodie'     => 1,
         'Any::Moose'  => 0,
         'Path::Class' => 0,
     },

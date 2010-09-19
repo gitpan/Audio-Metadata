@@ -7,10 +7,11 @@ WriteMakefile
           'PREREQ_PM' => {
                            'Any::Moose' => 0,
                            'File::Copy' => 0,
+                           'Module::Find' => 0,
                            'Path::Class' => 0,
                            'Test::Deep' => 0,
                            'Test::More' => 0,
-                           'autodie' => 1
+                           'autodie' => 0
                          },
           'INSTALLDIRS' => 'site',
           'EXE_FILES' => [],

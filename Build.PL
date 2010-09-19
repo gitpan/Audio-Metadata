@@ -14,9 +14,10 @@ my $builder = Module::Build->new(
         'File::Copy' => 0,
     },
     requires => {
-        'autodie'     => 1,
-        'Any::Moose'  => 0,
-        'Path::Class' => 0,
+        'autodie'      => 0,
+        'Module::Find' => 0,
+        'Any::Moose'   => 0,
+        'Path::Class'  => 0,
     },
     add_to_cleanup      => [ 'Audio-Metadata-*' ],
     create_makefile_pl => 'traditional',

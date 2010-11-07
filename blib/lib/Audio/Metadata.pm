@@ -86,7 +86,7 @@ sub as_text {
 
     my $vars = $self->vars_as_hash;
     return join("\n",
-                '_file_name ' . $self->file_path,
+                $self->file_path,
                 map $_ . ' ' . $vars->{$_}, sort keys %$vars) . "\n";
 }
 
@@ -96,16 +96,6 @@ sub save {
     my $self = shift;
 
     die 'Call to abstract method';
-}
-
-
-sub file_to_text {
-    ## Class method. Returns text metadata for the specified file.
-    my $class = shift;
-    my ($path) = @_;
-
-    my $metadata = $class->new_from_path($path);
-    return $metadata->as_text;
 }
 
 
@@ -119,6 +109,10 @@ __END__
 =head1 NAME
 
 Audio::Metadata - Manipulate metadata in audio files
+
+=head1 VERSION
+
+Version 0.04
 
 =cut
 
@@ -191,14 +185,6 @@ Returns complete file information as space-separated key/value pairs in multi-li
 =over
 
 Writes metadata to file. 
-
-=back
-
-=head3 C<file_to_text($path)>
-
-=over
-
-Class method. Returns text metadata for the specified file. 
 
 =back
 

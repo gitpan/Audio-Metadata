@@ -9,7 +9,7 @@ use Any::Moose;
 extends 'Audio::Metadata::Flac::Block';
 
 has vendor   => ( isa => 'Str', is => 'rw', );
-has comments => ( isa => 'HashRef', is => 'rw', default => sub { {} }, );
+has comments => ( isa => 'HashRef', is => 'rw', );
 
 
 __PACKAGE__->meta->make_immutable;
@@ -89,7 +89,7 @@ sub content_as_string {
     my $vars = $self->comments;
     $content .= pack('V', scalar keys %$vars);
     while (my ($var, $value) = each %$vars) {
-        my $var_str = $var . '=' . $value;
+        my $var_str = uc($var) . '=' . $value;
         $content .= pack('V', length($var_str)) . $var_str;
     }
 

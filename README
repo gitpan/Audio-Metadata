@@ -1,45 +1,13 @@
-Audio-Metadata
-
-This module suite aims to provide simple, pure Perl means reads and
-write metadata in various audio formats with minimum limitations and
-no dependencies on external libraries.
-
-INSTALLATION
-
-To install this module, run the following commands:
-
-	perl Build.PL
-	./Build
-	./Build test
-	./Build install
-
-SUPPORT AND DOCUMENTATION
-
-After installing, you can find documentation for this module with the perldoc command.
-
-    perldoc Audio::Metadata
-
-You can also look for information at:
-
-    RT, CPAN's request tracker
-        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Audio-Metadata
-
-    AnnoCPAN, Annotated CPAN documentation
-        http://annocpan.org/dist/Audio-Metadata
-
-    CPAN Ratings
-        http://cpanratings.perl.org/d/Audio-Metadata
-
-    Search CPAN
-        http://search.cpan.org/dist/Audio-Metadata/
 
 
-LICENSE AND COPYRIGHT
+This archive contains the distribution Audio-Metadata,
+version 0.10:
 
-Copyright (C) 2010 Egor Shipovalov
+  Manipulate metadata in audio files
 
-This program is free software; you can redistribute it and/or modify it
-under the terms of either: the GNU General Public License as published
-by the Free Software Foundation; or the Artistic License.
+This software is copyright (c) 2010 by Egor Shipovalov.
 
-See http://dev.perl.org/licenses/ for more information.
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+

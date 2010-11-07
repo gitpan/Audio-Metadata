@@ -1,6 +1,6 @@
 Revision history for Audio-Metadata-Flac
 
-0.10    07 Nov 2010
+0.11    07 Nov 2010
         Added tools for processing metadata sets as plain text files.
         Added command-line utility.
 

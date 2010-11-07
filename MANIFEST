@@ -13,17 +13,6 @@ _build/magicnum
 _build/notes
 _build/prereqs
 _build/runtime_params
-blib/lib/Audio/Metadata.pm
-blib/lib/Audio/Metadata/Flac.pm
-blib/lib/Audio/Metadata/Flac/Block.pm
-blib/lib/Audio/Metadata/Flac/Block/Application.pm
-blib/lib/Audio/Metadata/Flac/Block/Comments.pm
-blib/lib/Audio/Metadata/Flac/Block/CueSheet.pm
-blib/lib/Audio/Metadata/Flac/Block/Padding.pm
-blib/lib/Audio/Metadata/Flac/Block/Picture.pm
-blib/lib/Audio/Metadata/Flac/Block/SeekTable.pm
-blib/lib/Audio/Metadata/Flac/Block/StreamInfo.pm
-blib/lib/Audio/Metadata/TextProcessor.pm
 dist.ini
 ignore.txt
 lib/Audio/Metadata.pm

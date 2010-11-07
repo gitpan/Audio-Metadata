@@ -25,4 +25,4 @@ requires:
   Module::Find: 0
   Path::Class: 0
   autodie: 0
-version: 0.10
+version: 0.11

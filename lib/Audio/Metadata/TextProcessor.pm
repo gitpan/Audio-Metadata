@@ -51,7 +51,7 @@ sub update_from_cue {
 
         foreach my $var (keys %$metadata) {
             $self->_log(" $var => $metadata->{$var}");
-            $metadata_writer->set_var(lc($var) => $metadata->{$var});
+            $metadata_writer->set_var($var => $metadata->{$var});
         }
         $metadata_writer->save;
     }
@@ -86,7 +86,7 @@ sub _apply_item {
     my $self = shift;
     my ($item) = @_;
 
-    my $metadata = Audio::Metadata->new_from_path($item->{_file_name});
+    my $metadata = Audio::Metadata->new_from_path($item->{_FILE_NAME});
     my $is_changed;
 
     foreach my $var (grep /^[^_]/, keys %$item) {

@@ -47,7 +47,7 @@ sub BUILDARGS {
         my $comment_size = unpack('V', substr($init_content, $offset));
         $offset += 4;
         my ($key, $value) = split /=/, substr($init_content, $offset, $comment_size);
-        $result{comments}{lc $key} = $value;
+        $result{comments}{$key} = $value;
         $offset += $comment_size;
     }
 
@@ -116,12 +116,6 @@ __END__
 =head1 NAME
 
 Audio::Metadata::Flac::Block::Comments - Representation of COMMENTS type block of FLAC metadata.
-
-=head1 VERSION
-
-Version 0.01
-
-=cut
 
 =head1 DESCRIPTION
 

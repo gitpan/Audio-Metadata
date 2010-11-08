@@ -28,10 +28,10 @@ for (0 .. $test_file_count - 1) {
 
 UPDATE_FROM_TEXT: {
     my @test_file_texts = map <<EOT, 0 .. $test_file_count - 1;
-_file_name $test_file_names[$_]
-album album 0$_
-artist artist 0$_
-year 198$_
+_FILE_NAME $test_file_names[$_]
+ALBUM album 0$_
+ARTIST artist 0$_
+YEAR 198$_
 EOT
 
     my $text_processor = Audio::Metadata::TextProcessor->new({

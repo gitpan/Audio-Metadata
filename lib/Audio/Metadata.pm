@@ -12,8 +12,6 @@ has path => ( isa => 'Path::Class::File', is => 'ro', );
 
 __PACKAGE__->meta->make_immutable;
 
-our $VERSION = '0.04';
-
 
 sub BUILDARGS {
     ## Builds object from file name given as string.
@@ -86,7 +84,7 @@ sub as_text {
 
     my $vars = $self->vars_as_hash;
     return join("\n",
-                '_file_name ' . $self->file_path,
+                '_FILE_NAME ' . $self->file_path,
                 map $_ . ' ' . $vars->{$_}, sort keys %$vars) . "\n";
 }
 

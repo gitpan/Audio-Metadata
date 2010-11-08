@@ -22,17 +22,17 @@ ok(my $audio_file = Audio::Metadata->new_from_path($test_file_name), 'Read audio
 
 # Test that medadata is read correctly.
 my %test_metadata = (
-    artist => 'test artist',
-    album  => 'test album',
-    year   => '1980',
+    ARTIST => 'test artist',
+    ALBUM  => 'test album',
+    YEAR   => '1980',
 );
 is_deeply($audio_file->vars_as_hash, \%test_metadata, 'Get metadata');
 
 # Test that medadata is written correctly w/o added padding.
 my %updated_metadata = (
-    artist => 'updated artist',
-    album  => 'updated album',
-    year   => '1996',
+    ARTIST => 'updated artist',
+    ALBUM  => 'updated album',
+    YEAR   => '1996',
 );
 $audio_file->set_var($_ => $updated_metadata{$_}) foreach keys %updated_metadata;
 $audio_file->save;
@@ -41,18 +41,18 @@ is_deeply($audio_file->vars_as_hash, \%updated_metadata, 'Update metadata');
 
 # Same w/added padding.
 my $long_comment = 'a' x 50000;
-$audio_file->set_var(long_comment => $long_comment);
+$audio_file->set_var(LONG_COMMENT => $long_comment);
 $audio_file->save;
 $audio_file = Audio::Metadata->new_from_path($test_file_name);
-is_deeply($audio_file->vars_as_hash, { %updated_metadata, long_comment => $long_comment }, 'Update metadata w/added padding');
+is_deeply($audio_file->vars_as_hash, { %updated_metadata, LONG_COMMENT => $long_comment }, 'Update metadata w/added padding');
 
 # Test text representation.
 my $correct_text = <<EOT;
-_file_name @{[ $audio_file->file_path ]}
-album $updated_metadata{album}
-artist $updated_metadata{artist}
-long_comment $long_comment
-year 1996
+_FILE_NAME @{[ $audio_file->file_path ]}
+ALBUM $updated_metadata{ALBUM}
+ARTIST $updated_metadata{ARTIST}
+LONG_COMMENT $long_comment
+YEAR 1996
 EOT
 is($audio_file->as_text, $correct_text, 'Get text representation');
 

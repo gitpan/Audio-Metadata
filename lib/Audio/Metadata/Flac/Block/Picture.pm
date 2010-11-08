@@ -31,12 +31,6 @@ __END__
 
 Audio::Metadata::Flac::Block::Picture - Representation of PICTURE type block of FLAC metadata.
 
-=head1 VERSION
-
-Version 0.01
-
-=cut
-
 =head1 DESCRIPTION
 
 For internal use only by L<Audio::Metadata::Flac>.

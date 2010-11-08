@@ -10,8 +10,6 @@ use IO::File;
 use Audio::Metadata::Flac::Block;
 
 
-our $VERSION = '0.01';
-
 extends 'Audio::Metadata';
 
 has vendor_string           => ( isa => 'Str', is => 'rw', );
@@ -193,12 +191,6 @@ __END__
 =head1 NAME
 
 Audio::Metadata::Flac - FLAC format support for Audio::Metadata
-
-=head1 VERSION
-
-Version 0.01
-
-=cut
 
 =head1 DESCRIPTION
 

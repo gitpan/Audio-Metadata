@@ -1,6 +1,6 @@
 Revision history for Audio-Metadata-Flac
 
-0.13    08 Nov 2010
+0.14    08 Nov 2010
         Tag names are no longer lower-cased.
         Removed obsolete version information.
 

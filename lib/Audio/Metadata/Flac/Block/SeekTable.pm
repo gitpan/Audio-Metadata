@@ -1,4 +1,7 @@
 package Audio::Metadata::Flac::Block::SeekTable;
+BEGIN {
+  $Audio::Metadata::Flac::Block::SeekTable::VERSION = '0.15';
+}
 
 use strict;
 use warnings;

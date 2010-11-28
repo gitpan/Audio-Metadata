@@ -1,4 +1,7 @@
 package Audio::Metadata::Flac::Block::Application;
+BEGIN {
+  $Audio::Metadata::Flac::Block::Application::VERSION = '0.15';
+}
 
 use strict;
 use warnings;

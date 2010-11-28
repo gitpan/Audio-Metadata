@@ -1,4 +1,7 @@
 package Audio::Metadata::TextProcessor;
+BEGIN {
+  $Audio::Metadata::TextProcessor::VERSION = '0.15';
+}
 
 use strict;
 use warnings;

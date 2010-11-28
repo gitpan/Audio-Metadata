@@ -1,5 +1,8 @@
 Revision history for Audio-Metadata-Flac
 
+0.15    28 Nov 2010
+        Removed POD coverage check. It did more harm than good.
+
 0.14    08 Nov 2010
         Tag names are no longer lower-cased.
         Removed obsolete version information.

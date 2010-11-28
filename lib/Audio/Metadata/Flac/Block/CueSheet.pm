@@ -1,4 +1,7 @@
 package Audio::Metadata::Flac::Block::CueSheet;
+BEGIN {
+  $Audio::Metadata::Flac::Block::CueSheet::VERSION = '0.15';
+}
 
 use strict;
 use warnings;

@@ -1,4 +1,7 @@
 package Audio::Metadata::Flac::Block::Comments;
+BEGIN {
+  $Audio::Metadata::Flac::Block::Comments::VERSION = '0.15';
+}
 
 use strict;
 use warnings;

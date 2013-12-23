@@ -1,4 +1,7 @@
 package Audio::Metadata::Flac::Block::StreamInfo;
+{
+  $Audio::Metadata::Flac::Block::StreamInfo::VERSION = '0.16';
+}
 BEGIN {
   $Audio::Metadata::Flac::Block::StreamInfo::VERSION = '0.15';
 }

@@ -1,5 +1,8 @@
 Revision history for Audio-Metadata-Flac
 
+0.16    23 Dec 2013
+        Fixed uninitialised value warnings, thanks to Cameron Thornton.
+
 0.15    28 Nov 2010
         Removed POD coverage check. It did more harm than good.
 

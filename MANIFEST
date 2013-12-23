@@ -5,7 +5,6 @@ META.yml
 Makefile.PL
 README
 dist.ini
-ignore.txt
 lib/Audio/Metadata.pm
 lib/Audio/Metadata/Flac.pm
 lib/Audio/Metadata/Flac/Block.pm

@@ -1,4 +1,7 @@
 package Audio::Metadata::TextProcessor;
+{
+  $Audio::Metadata::TextProcessor::VERSION = '0.16';
+}
 BEGIN {
   $Audio::Metadata::TextProcessor::VERSION = '0.15';
 }

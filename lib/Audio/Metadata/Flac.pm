@@ -1,4 +1,7 @@
 package Audio::Metadata::Flac;
+{
+  $Audio::Metadata::Flac::VERSION = '0.16';
+}
 BEGIN {
   $Audio::Metadata::Flac::VERSION = '0.15';
 }
@@ -128,7 +131,7 @@ sub save {
     my $self = shift;
 
     # Measure current block chain size and available padding size.
-    my ($block_chain_size, $padding_avail);
+    my ($block_chain_size, $padding_avail) = (0, 0);
     for (my $block = $self->_block_chain; defined $block; $block = $block->next) {
         $block_chain_size += $block->size;
         $padding_avail += $block->content_size if ref($block) =~ /::Padding$/;

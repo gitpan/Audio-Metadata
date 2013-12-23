@@ -1,4 +1,7 @@
 package Audio::Metadata::Flac::Block::Padding;
+{
+  $Audio::Metadata::Flac::Block::Padding::VERSION = '0.16';
+}
 BEGIN {
   $Audio::Metadata::Flac::Block::Padding::VERSION = '0.15';
 }

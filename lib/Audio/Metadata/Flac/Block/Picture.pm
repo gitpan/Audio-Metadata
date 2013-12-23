@@ -1,4 +1,7 @@
 package Audio::Metadata::Flac::Block::Picture;
+{
+  $Audio::Metadata::Flac::Block::Picture::VERSION = '0.16';
+}
 BEGIN {
   $Audio::Metadata::Flac::Block::Picture::VERSION = '0.15';
 }

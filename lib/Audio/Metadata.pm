@@ -1,4 +1,7 @@
 package Audio::Metadata;
+{
+  $Audio::Metadata::VERSION = '0.16';
+}
 BEGIN {
   $Audio::Metadata::VERSION = '0.15';
 }
